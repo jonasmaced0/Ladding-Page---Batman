@@ -1,0 +1,116 @@
+body{
+    background: #1C1C1C; /* define a cor de fundo */
+    color: white; /* define a cor da fonte */
+    font-family: 'poppinsregular'; /* define o tipo de fonte */
+    max-width: 1200px; /* define a largura máxima da página */
+    margin: 0 auto; /* define a margem superior e inferior e as margens laterais */
+    padding: 15px; /* define o recuo em todas as extremidades */
+}
+
+/* ESTILIZAÇÃO DO HEADER */
+
+header{
+    display: flex; /* define a disposição  */
+    flex-direction: row; /* define a disposição em fileira  */
+    justify-content: space-between; /* define um espaçamento entre os itens */
+    align-items: center; /* alinha os itens no centro */
+    height: 180px;
+    
+}
+#logo{
+    width: 25%;
+    height: 90%;
+    margin: 0px ;
+}
+#logo img{
+    width: 100%;
+    height: 100%;
+    
+}
+#title{
+    flex-direction: column; /* define a direção da disposição */
+    line-height: 40px; /* define a altura da linha */
+}
+li{
+    display: inline-block; /* define a disposição dos itens dos blocos em linha */
+    margin: 20px; /* define a margem */
+}
+a{
+    color: white; /* define a cor da fonte */
+    text-decoration: none; /* define a estilização do texto */
+    transition: 0.6s all; /* define o efeito de transição */
+}
+a:hover{
+    color: 	#A9A9A9; /* define a cor da fonte */
+}
+li:last-child{
+    border: 2px solid white; /* define a borda */
+    padding: 10px; /* define o recuo */
+    border-radius: 15px; /* define o raio da borda */
+    width: 130px; /* define a largura do elemento */
+    text-align: center; /* define o alinhamento do texto */
+}
+li:last-child:hover{
+    background: black; /* define a cor de fundo */
+    
+}
+li:last-child:hover:a{ 
+    color: white; /* define a cor da fonte */
+}
+h1{
+    font-weight: 700; /* define a espessura da fonte */
+    color: white;  /* define a cor da fonte  */
+}
+
+/* ESTILIZAÇÃO DO MAIN */
+
+main{
+    display: flex;
+    flex-direction: row;
+    margin-top: 30px;
+}
+h2{
+    font-size: 37px;
+    font-weight: 10px;
+    font-family: 'poppinsmedium';
+    line-height: 45px;
+    letter-spacing: 1px;
+    text-align: left;
+    padding: 15px;
+}
+span{
+    color: #A9A9A9;
+}
+p{
+    max-width: 500px;
+    font-family: 'poppinslight';
+    font-size: 18px;
+    line-height: 20px;
+    padding: 0 30px;
+}
+article img{
+    width: 580px;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    margin: 30px;
+}
+input{
+    margin: 8px;
+    height: 30px;
+    border-radius: 10px;
+    padding: 8px 10px;
+    font-size: 15px;
+    color: black;
+    border: none;
+}
+form [type="submit"]{
+    height: 50px;
+    width: 45%;
+    background: #A9A9A9;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+}
